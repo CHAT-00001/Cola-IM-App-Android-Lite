@@ -1,13 +1,59 @@
+# Android Studio
 *.iml
 .gradle
 /local.properties
 /.idea
 /.idea/workspace.xml
 /.idea/libraries
-.DS_Store
-/build
-/captures
+.captures
 .externalNativeBuild
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Build outputs
+/build
+app/build
+baidu/build
+beauty/build
+common/build
+game/build
+im/build
+live/build
+main/build
+mall/build
+video/build
+
+# Debug / Release output
 */debug
 */release
+
+# Temp
 /tmpmob
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Signing & Keys
+*.jks
+*.keystore
+*.keys
+google-services.json
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Test
+test.md
+
+# Environments
+.env
+.env.local
+
+# IDE
+*.class
+*.log
