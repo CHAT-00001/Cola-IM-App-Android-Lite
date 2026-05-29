@@ -1,0 +1,38 @@
+// baidu build.gradle -- 百度
+// 2026-05-29 17:39
+
+////////
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+android {
+    namespace 'com.yunbao.baidu'  // 替换为你从
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies["androidx"]
+    //fastJson解析json
+    api rootProject.ext.dependencies["fastjson"]
+    //百度语音识别
+    api files('libs/bdasr_V3_20210628_cfe8c44.jar')
+}

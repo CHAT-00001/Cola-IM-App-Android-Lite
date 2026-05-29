@@ -1,0 +1,50 @@
+// mall build.gradle -- 商城
+// 2026-05-29 17:49
+
+////////
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+//
+android {
+    namespace 'com.yunbao.mall'  // 商城
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':common')
+    api project(':im')
+    api project(':live')
+}
+
+
+
+//////// END

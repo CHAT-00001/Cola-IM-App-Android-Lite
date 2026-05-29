@@ -1,0 +1,60 @@
+// /config.gradle
+
+ext {
+    android = [
+            compileSdkVersion: 31,
+            buildToolsVersion: "30.0.2",
+            minSdkVersion    : 23,
+            targetSdkVersion : 34,
+            versionCode      : 203,
+            versionName      : "8.0.8"
+    ]
+
+    manifestPlaceholders = [
+            serverHost       : "https://api2.damawei.com",
+
+            //腾讯IM appId
+            TxIMAppId        : "1600062367",
+            //腾讯tpns推送
+            XG_ACCESS_ID     : "1600062367",
+            XG_ACCESS_KEY    : "Y3nFmcAH8Kt4cVJbgVfOAVWe4XvO768ChnDEKzKmI5q7R0OlbOE3JapF80yOD7vu",
+            //tpns推送接入点的域名
+            XG_SERVER_SUFFIX : "tpns.sh.tencent.com",
+            //广州：tpns.tencent.com
+            //上海：tpns.sh.tencent.com
+            //新加坡：tpns.sgp.tencent.com
+            //中国香港：tpns.hk.tencent.com
+
+            //腾讯地图，用于定位，地图，逆地址解析
+            txMapAppKey      : "NXIBZ-ZNA6V-XNWPB-5B65M-RKR4Q-QEBTG",
+            txMapAppSecret   : "wvdMm9mOmXtc5",
+
+            //腾讯bugly
+            buglyAppId       : "08c33",
+
+            //百度语音识别
+            baiduAppId       : "265",
+            baiduAppKey      : "wHwX26hU",
+            baiduAppSecretKey: "Bky1IGLTHR",
+
+            //友盟统计
+            umengAppKey      : "5bff3b1e",
+
+            //openinstall，app带参数安装,用于建立上下级邀请关系
+            openinstallAppKey: "p5",
+
+            //Mob登录分享服务
+            MobAppKey        : "2d",
+            MobAppSecret     : "e57f1edb54b",
+
+            //QQ互联，QQ登录分享
+            QQAppId          : "1022",
+            QQAppKey         : "0759996e73b80",
+
+            //微信开放平台，微信登录分享支付
+            WxAppId          : "wx9ca4",
+            WxAppSecret      : "c208e5e04",
+
+    ]
+
+}

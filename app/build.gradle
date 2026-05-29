@@ -1,0 +1,97 @@
+// app build.gradle --
+// 2026-05-29 17:32
+
+////////
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: '../Mob.gradle'
+
+//
+android {
+    namespace 'com.yunbao.phonelive'  // APP 模块
+
+    buildFeatures {
+        buildConfig = true   // ⭐ 添加这一行
+    }
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    signingConfigs {
+        release {
+            keyAlias 'phonelive'
+            keyPassword 'phonelive'
+            storeFile file('../yunbao.jks')
+            storePassword 'phonelive'
+        }
+    }
+
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.yunbao.phonelive"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion 34
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    android.applicationVariants.all { variant ->
+        def appName = "直播demo"
+        def createTime = new Date().format("yyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))
+        def fileName = appName + "_v" + defaultConfig.versionName + "_" + createTime
+        variant.outputs.each { output ->
+            def curFileName = output.outputFileName.toString()
+            def replacement = curFileName.substring(0,curFileName.indexOf("."))
+            output.outputFileName =curFileName.replace(replacement,fileName)
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //直播
+    api project(':main')
+    //短视频
+    api project(':video')
+    // Bugly 崩溃上报 SDK（基础库） - 2026-05-29 23:46 补充
+    implementation 'com.tencent.bugly:crashreport:latest.release'  // 建议使用4.0+版本以兼容AGP 8.0
+}
+
+
+//////// END

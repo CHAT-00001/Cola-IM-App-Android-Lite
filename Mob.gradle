@@ -1,0 +1,65 @@
+// 分享模块
+// 2026-05-29 17:02
+
+////////
+
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    // 直接从项目中读取属性，如果没有则使用默认值
+    def MobAppKey = project.hasProperty('MobAppKey') ? project.MobAppKey : ""
+    def MobAppSecret = project.hasProperty('MobAppSecret') ? project.MobAppSecret : ""
+
+    println "MobAppKey--->" + MobAppKey
+    println "MobAppSecret--->" + MobAppSecret
+
+    appKey MobAppKey
+    appSecret MobAppSecret
+
+    ShareSDK {
+        version '3.9.9'
+        loopShare true
+        devInfo {
+            def QQAppId = project.hasProperty('QQAppId') ? project.QQAppId : ""
+            def QQAppKey = project.hasProperty('QQAppKey') ? project.QQAppKey : ""
+            def WxAppId = project.hasProperty('WxAppId') ? project.WxAppId : ""
+            def WxAppSecret = project.hasProperty('WxAppSecret') ? project.WxAppSecret : ""
+
+            println "QQAppId--->" + QQAppId
+            println "QQAppKey--->" + QQAppKey
+            println "WxAppId--->" + WxAppId
+            println "WxAppSecret--->" + WxAppSecret
+
+            QQ {
+                appId QQAppId
+                appKey QQAppKey
+            }
+            QZone {
+                appId QQAppId
+                appKey QQAppKey
+            }
+            Wechat {
+                appId WxAppId
+                appSecret WxAppSecret
+            }
+            WechatMoments {
+                appId WxAppId
+                appSecret WxAppSecret
+            }
+
+            Facebook {
+                appKey "6928238"
+                appSecret "630ebd9f459"
+                callbackUri "https://mob.com"
+            }
+            Twitter {
+                appKey "LRBM0HOy"
+                appSecret "gbeWs7DjyGuMe8G"
+                callbackUri "https://mob.com"
+            }
+        }
+    }
+}
+
+
+//////// END
