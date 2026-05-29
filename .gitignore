@@ -11,6 +11,8 @@
 *.aab
 *.ap_
 *.dex
+.build.gradle
+
 
 # Build outputs
 /build
@@ -56,4 +58,4 @@ test.md
 
 # IDE
 *.class
-*.log
+*.logb

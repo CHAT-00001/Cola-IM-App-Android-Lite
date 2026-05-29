@@ -6,8 +6,8 @@ ext {
             buildToolsVersion: "30.0.2",
             minSdkVersion    : 23,
             targetSdkVersion : 34,
-            versionCode      : 203,
-            versionName      : "8.0.8"
+            versionCode      : 1,
+            versionName      : "0.1.0"
     ]
 
     manifestPlaceholders = [
