@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.sqlite.db.SupportSQLiteOpenHelper
+import androidx.sqlite.db.SupportSQLiteDatabase
 import com.cola.im.sdk.storage.dao.MessageDao
 import com.cola.im.sdk.storage.entity.MessageEntity
 import timber.log.Timber
@@ -14,8 +14,7 @@ import java.security.MessageDigest
  * Room 数据库——单用户单库隔离
  *
  * 数据库文件命名：cola_im_{sha256(uid)}.db
- * 强制 WAL 模式
- * 预留 SQLCipher 加密接口（SupportSQLiteOpenHelper）
+ * 通过 Callback 开启 WAL 模式
  */
 @Database(
     entities = [MessageEntity::class],
@@ -32,6 +31,18 @@ abstract class AppDatabase : RoomDatabase() {
 
         @Volatile
         private var instances = HashMap<String, AppDatabase>()
+
+        private val WAL_CALLBACK = object : Callback() {
+            override fun onCreate(db: SupportSQLiteDatabase) {
+                super.onCreate(db)
+                db.enableWriteAheadLogging()
+            }
+
+            override fun onOpen(db: SupportSQLiteDatabase) {
+                super.onOpen(db)
+                db.enableWriteAheadLogging()
+            }
+        }
 
         /**
          * 根据 uid 获取/创建独立数据库实例
@@ -52,23 +63,8 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     dbName
                 )
-                    .openHelperFactory(object : SupportSQLiteOpenHelper.Factory {
-                        override fun create(configuration: SupportSQLiteOpenHelper.Configuration): SupportSQLiteOpenHelper {
-                            // 预留：此处可替换为 SQLCipher encrypted helper
-                            return Room.databaseBuilder(
-                                context.applicationContext,
-                                AppDatabase::class.java,
-                                dbName
-                            ).build().openHelper
-                        }
-                    })
+                    .addCallback(WAL_CALLBACK)
                     .build()
-
-                // 强制开启 WAL 模式
-                db.setQueryExecutor { Runnable {
-                    db.openHelper.writableDatabase.enableWriteAheadLogging()
-                    Timber.d("WAL enabled for $dbName")
-                } }
 
                 instances[dbName] = db
                 Timber.i("Database opened: $dbName (uid=$uid)")
