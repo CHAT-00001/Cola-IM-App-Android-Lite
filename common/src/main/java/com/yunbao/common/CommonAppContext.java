@@ -24,7 +24,8 @@ import java.security.MessageDigest;
 
 
 /**
- * Created by cxf on 2017/8/3.
+ * COMMON
+ * 应用上下文
  */
 
 public class CommonAppContext extends MultiDexApplication {

@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - room - anchor
+// 2026-05-30 06:18
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -98,8 +101,8 @@ import java.util.List;
 import pl.droidsonroids.gif.GifImageView;
 
 /**
- * Created by cxf on 2018/10/7.
- * 主播直播间
+ * LIVE
+ * 主播视角 - 直播间
  */
 
 public class LiveAnchorActivity extends LiveActivity implements LiveFunctionClickListener {
@@ -1414,3 +1417,6 @@ public class LiveAnchorActivity extends LiveActivity implements LiveFunctionClic
     }
 
 }
+
+
+//////// END

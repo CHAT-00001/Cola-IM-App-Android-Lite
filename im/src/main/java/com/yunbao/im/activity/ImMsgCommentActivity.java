@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 短视频评论通知
+// 2026-05-30 06:39
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,7 +23,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by 云豹科技 on 2022/1/18.
+ * IM
+ * 收到的评论（短视频）
  */
 public class ImMsgCommentActivity extends AbsActivity {
 
@@ -91,3 +95,5 @@ public class ImMsgCommentActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+//////// END

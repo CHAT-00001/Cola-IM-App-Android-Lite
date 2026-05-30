@@ -1,5 +1,9 @@
 package com.yunbao.live.activity;
 
+// live - 黑名单
+// 2026-05-30 06:21
+
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -26,7 +30,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2019/4/27.
+ * LIVE
  * 直播间拉黑用户列表
  */
 
@@ -128,3 +132,5 @@ public class LiveBlackActivity extends AbsActivity implements OnItemClickListene
         super.onDestroy();
     }
 }
+
+//////// END

@@ -38,7 +38,9 @@ import com.yunbao.mall.http.MallHttpConsts;
 import com.yunbao.mall.http.MallHttpUtil;
 
 /**
- * 买家 订单详情
+ *
+ * MALL
+ * 买家 订单细节
  */
 public class BuyerOrderDetailActivity extends AbsActivity {
 

@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - room - admin
+// 2026-05-30 06:17
+
 import android.content.Context;
 import android.content.Intent;
 import android.text.TextUtils;
@@ -11,7 +14,8 @@ import com.yunbao.live.R;
 import com.yunbao.live.views.LiveAdminListViewHolder;
 
 /**
- * Created by cxf on 2019/4/27.
+ * LIVE
+ * 直播间管理员名单（房管）
  */
 
 public class LiveAdminListActivity extends AbsActivity {
@@ -39,3 +43,6 @@ public class LiveAdminListActivity extends AbsActivity {
         liveAdminListViewHolder.loadData();
     }
 }
+
+
+//////// END

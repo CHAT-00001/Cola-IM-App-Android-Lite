@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 主播资料 - 我的印象标签
+// 2026-05-30 05:43
+
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -79,3 +82,5 @@ public class MyImpressActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+//////// END

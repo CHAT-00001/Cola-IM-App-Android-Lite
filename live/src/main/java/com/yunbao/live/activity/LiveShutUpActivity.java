@@ -1,11 +1,13 @@
 package com.yunbao.live.activity;
 
+// live - 直播禁用用户列表
+// 2026-05-30 06:28
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import android.text.TextUtils;
-
 import com.alibaba.fastjson.JSON;
 import com.yunbao.common.Constants;
 import com.yunbao.common.activity.AbsActivity;
@@ -22,12 +24,11 @@ import com.yunbao.live.adapter.LiveShutUpAdapter;
 import com.yunbao.live.bean.LiveShutUpBean;
 import com.yunbao.live.http.LiveHttpConsts;
 import com.yunbao.live.http.LiveHttpUtil;
-
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2019/4/27.
+ * LIVE
  * 直播间禁言用户列表
  */
 
@@ -130,3 +131,5 @@ public class LiveShutUpActivity extends AbsActivity implements OnItemClickListen
         super.onDestroy();
     }
 }
+
+//////// END

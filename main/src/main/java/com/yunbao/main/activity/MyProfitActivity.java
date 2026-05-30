@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 钱包 - 提现
+// 2026-05-30 05:45
+
 import android.content.Intent;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -29,6 +32,7 @@ import com.yunbao.main.http.MainHttpConsts;
 import com.yunbao.main.http.MainHttpUtil;
 
 /**
+ * 我的钱包提现页面
  * Created by cxf on 2018/10/20.
  */
 
@@ -245,3 +249,6 @@ public class MyProfitActivity extends AbsActivity implements View.OnClickListene
         super.onDestroy();
     }
 }
+
+
+//////// END

@@ -1,9 +1,11 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 用户主页
+// 2026-05-30 05:58
+
 import android.content.Intent;
 import android.text.TextUtils;
 import android.view.ViewGroup;
-
 import com.yunbao.common.Constants;
 import com.yunbao.common.activity.AbsActivity;
 import com.yunbao.common.interfaces.ActivityResultCallback;
@@ -13,7 +15,8 @@ import com.yunbao.main.R;
 import com.yunbao.main.views.UserHomeViewHolder;
 
 /**
- * Created by cxf on 2018/9/25.
+ * 我的
+ * 用户主页
  */
 public class UserHomeActivity extends AbsActivity {
 
@@ -69,3 +72,5 @@ public class UserHomeActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+//////// END

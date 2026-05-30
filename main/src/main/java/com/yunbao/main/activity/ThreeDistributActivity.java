@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 三级分销
+// 2026-05-30 05:57
+
 import android.Manifest;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -55,7 +58,8 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /**
- * Created by cxf on 2019/4/29.
+ * 我的
+ * 设置中心
  * 三级分销
  */
 
@@ -360,3 +364,6 @@ public class ThreeDistributActivity extends AbsActivity implements View.OnClickL
         }
     }
 }
+
+
+//////// END

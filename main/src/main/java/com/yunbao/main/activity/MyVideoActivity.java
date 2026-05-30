@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 内容 - 视频
+// 2026-05-30 05:46
+
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.view.View;
@@ -36,6 +39,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 我的视频页面
  * Created by cxf on 2018/12/14.
  */
 
@@ -187,3 +191,6 @@ public class MyVideoActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+
+//////// END

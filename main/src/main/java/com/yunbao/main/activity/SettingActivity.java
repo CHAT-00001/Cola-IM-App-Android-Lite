@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 设置
+// 2026-05-30 05:51
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Handler;
@@ -44,7 +47,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/9/30.
+ * 我的
+ * 设置页面
  */
 
 public class SettingActivity extends AbsActivity implements SettingAdapter.ActionListener {
@@ -285,3 +289,6 @@ public class SettingActivity extends AbsActivity implements SettingAdapter.Actio
 
 
 }
+
+
+//////// END

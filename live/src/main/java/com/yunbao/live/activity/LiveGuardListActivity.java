@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 守护榜
+// 2026-05-30 06:25
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,7 +26,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/11/15.
+ * LIVE
+ * 直播守护
  */
 
 public class LiveGuardListActivity extends AbsActivity {
@@ -102,3 +106,6 @@ public class LiveGuardListActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+
+//////// END

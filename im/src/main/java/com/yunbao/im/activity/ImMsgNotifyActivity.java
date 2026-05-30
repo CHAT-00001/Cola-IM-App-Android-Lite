@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 系统通知
+// 2026-01-06 06:10
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -7,9 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
 import androidx.annotation.Nullable;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.yunbao.common.CommonAppConfig;
@@ -18,8 +19,12 @@ import com.yunbao.common.utils.L;
 import com.yunbao.common.utils.RouteUtil;
 import com.yunbao.common.utils.SpUtil;
 import com.yunbao.im.event.NotificiationClickEvent;
-
 import org.greenrobot.eventbus.EventBus;
+
+/**
+ * IM
+ * 系统通知
+ */
 
 public class ImMsgNotifyActivity extends Activity {
 

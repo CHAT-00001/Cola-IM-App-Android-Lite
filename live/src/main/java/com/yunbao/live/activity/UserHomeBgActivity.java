@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 用户主页背景图
+// 2026-05-30 06:33
+
 import android.Manifest;
 import android.app.Dialog;
 import android.content.ContentValues;
@@ -46,7 +49,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 云豹科技 on 2022/6/6.
+ * LIVE
+ * 用户主页背景图
  */
 public class UserHomeBgActivity extends AbsActivity implements View.OnClickListener {
 
@@ -210,3 +214,5 @@ public class UserHomeBgActivity extends AbsActivity implements View.OnClickListe
         super.onDestroy();
     }
 }
+
+//////// END

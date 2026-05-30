@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 动态
+// 2026-05-30 05:41
+
 import android.Manifest;
 import android.content.Intent;
 import android.view.View;
@@ -43,3 +46,5 @@ public class MyActiveActivity extends AbsActivity implements View.OnClickListene
     }
 
 }
+
+//////// END

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Cola IM</string>
+    <string name="tab_home" translatable="false">Home</string>
+    <string name="tab_dynamic" translatable="false">Dynamic</string>
+    <string name="tab_add" translatable="false">Add</string>
+    <string name="tab_discover" translatable="false">Discover</string>
+    <string name="tab_profile" translatable="false">Profile</string>
+</resources>

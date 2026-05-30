@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 艾特我的
+// 2026-05-30 06:37
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -20,7 +23,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by 云豹科技 on 2022/1/18.
+ * IM
+ * 艾特我的 页面
  */
 public class ImMsgAtActivity extends AbsActivity {
 
@@ -91,3 +95,5 @@ public class ImMsgAtActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+//////// END

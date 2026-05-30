@@ -30,6 +30,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * MALL
  * 买家申请退款
  */
 public class BuyerRefundApplyActivity extends AbsActivity implements View.OnClickListener {

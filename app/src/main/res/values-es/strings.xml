@@ -1,0 +1,9 @@
+<?xml version="1.0"encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="true">Cola IM</string>
+    <string name="tab_home">Inicio</string>
+    <string name="tab_dynamic">Dinámico</string>
+    <string name="tab_add">Añadir</string>
+    <string name="tab_discover">Descubrir</string>
+    <string name="tab_profile">Mi perfil</string>
+</resources>

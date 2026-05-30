@@ -23,6 +23,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * MALL
  * 买家 收货地址
  */
 public class BuyerAddressActivity extends AbsActivity implements View.OnClickListener, BuyerAddressAdapter.ActionListener {

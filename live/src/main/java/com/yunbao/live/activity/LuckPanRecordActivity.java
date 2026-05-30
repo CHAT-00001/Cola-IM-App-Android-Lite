@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 福袋中奖记录
+// 2026-05-30 06:29
+
 import android.app.Dialog;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import android.view.View;
@@ -21,7 +24,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by 云豹科技 on 2022/3/2.
+ * LIVE
+ * 幸运用户记录（福袋中奖记录）
  */
 public class LuckPanRecordActivity extends AbsActivity implements View.OnClickListener {
 
@@ -117,3 +121,6 @@ public class LuckPanRecordActivity extends AbsActivity implements View.OnClickLi
 
     }
 }
+
+
+//////// END

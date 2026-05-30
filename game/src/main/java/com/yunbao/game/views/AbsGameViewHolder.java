@@ -1,9 +1,11 @@
 package com.yunbao.game.views;
 
+// game - 游戏视图管理器
+// 2026-05-30 06:46
+
 import android.content.Context;
 import android.view.View;
 import android.widget.FrameLayout;
-
 import com.alibaba.fastjson.JSONObject;
 import com.yunbao.common.utils.RouteUtil;
 import com.yunbao.common.utils.WordUtil;
@@ -14,11 +16,11 @@ import com.yunbao.game.event.GameWindowChangedEvent;
 import com.yunbao.game.event.OpenGameChargeEvent;
 import com.yunbao.game.interfaces.GameActionListener;
 import com.yunbao.game.util.GameSoundPool;
-
 import org.greenrobot.eventbus.EventBus;
 
 /**
- * Created by cxf on 2018/10/31.
+ * GAME
+ * 抽象游戏视图管理器
  */
 
 public abstract class AbsGameViewHolder extends AbsViewHolder implements View.OnClickListener {
@@ -181,3 +183,5 @@ public abstract class AbsGameViewHolder extends AbsViewHolder implements View.On
         return mBetStarted;
     }
 }
+
+//////// END

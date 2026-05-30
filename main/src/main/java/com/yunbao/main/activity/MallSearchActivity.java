@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 商城 - 首页 - 搜索
+// 2026-05-30 05:39
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -40,6 +43,9 @@ import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 商城搜索
+ */
 public class MallSearchActivity extends AbsActivity implements View.OnClickListener {
 
     public static void forward(Context context) {
@@ -313,3 +319,6 @@ public class MallSearchActivity extends AbsActivity implements View.OnClickListe
         }
     }
 }
+
+
+//////// END

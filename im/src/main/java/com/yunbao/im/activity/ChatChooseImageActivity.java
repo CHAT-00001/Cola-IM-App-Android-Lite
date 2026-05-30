@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 聊天页面 - 选择图片
+// 2026-05-30 06:36
+
 import android.content.Intent;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,7 +23,7 @@ import java.io.File;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/7/16.
+ * IM
  * 聊天时候选择图片
  */
 
@@ -96,6 +99,7 @@ public class ChatChooseImageActivity extends AbsActivity implements View.OnClick
         mChooseImageUtil.release();
         super.onDestroy();
     }
-
-
 }
+
+
+//////// END

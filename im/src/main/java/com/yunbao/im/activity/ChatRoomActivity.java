@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 聊天室
+// 2026-05-30 06:36
+
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
@@ -262,3 +265,5 @@ public class ChatRoomActivity extends AbsActivity implements KeyBoardUtil.KeyBoa
         return mFromUserHome;
     }
 }
+
+//////// END

@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 认证中心 - 注册
+// 2026-05-30 05:49
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Handler;
@@ -10,7 +13,6 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.yunbao.common.CommonAppConfig;
@@ -33,13 +35,13 @@ import com.yunbao.main.dialog.LoginTipDialogFragment;
 import com.yunbao.main.event.RegSuccessEvent;
 import com.yunbao.main.http.MainHttpConsts;
 import com.yunbao.main.http.MainHttpUtil;
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 /**
- * Created by cxf on 2018/9/25.
+ * 认证中心
+ * 用户注册页面
  */
 
 public class RegisterActivity extends AbsActivity {
@@ -362,3 +364,5 @@ public class RegisterActivity extends AbsActivity {
     }
 
 }
+
+//////// END

@@ -27,6 +27,7 @@ import com.yunbao.mall.http.MallHttpConsts;
 import com.yunbao.mall.http.MallHttpUtil;
 
 /**
+ * MALL
  * 买家提现
  */
 public class BuyerCashActivity extends AbsActivity implements View.OnClickListener {

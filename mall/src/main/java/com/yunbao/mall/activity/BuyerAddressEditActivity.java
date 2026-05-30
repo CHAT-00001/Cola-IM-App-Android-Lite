@@ -30,7 +30,8 @@ import cn.qqtheme.framework.entity.Province;
 import cn.qqtheme.framework.picker.AddressPicker;
 
 /**
- * 买家 增加收货地址
+ * MALL
+ * 买家 编辑收货地址
  */
 public class BuyerAddressEditActivity extends AbsActivity implements View.OnClickListener {
 

@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 动态 - 发布
+// 2026-05-30 05:34
+
 import android.Manifest;
 import android.app.Dialog;
 import android.content.Intent;
@@ -865,3 +868,6 @@ public class ActivePubActivity extends AbsActivity implements View.OnClickListen
     }
 
 }
+
+
+//////// END

@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 直播回放记录
+// 2026-05-30 06:26
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.ViewGroup;
@@ -12,7 +15,8 @@ import com.yunbao.live.R;
 import com.yunbao.live.views.LiveRecordViewHolder;
 
 /**
- * Created by cxf on 2018/9/30.
+ * LIVE
+ * 直播回放记录
  */
 
 public class LiveRecordActivity extends AbsActivity {
@@ -52,3 +56,5 @@ public class LiveRecordActivity extends AbsActivity {
         liveRecordViewHolder.loadData();
     }
 }
+
+//////// END

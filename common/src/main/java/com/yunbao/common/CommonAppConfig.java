@@ -1,5 +1,10 @@
 package com.yunbao.common;
 
+// common 公共 模块
+// 2026-05-30 03:35
+
+/// /////
+
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -29,46 +34,79 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by cxf on 2017/8/4 .
- */
-
+// #  [COMMON] - 公共应用配置常量
 public class CommonAppConfig {
+
+    // # 应用包名
     public static final String PACKAGE_NAME = "com.yunbao.phonelive";
-    //Http请求头 Header
+
+    // # Http请求头 Header
     public static final Map<String, String> HEADER = new HashMap<>();
-    //域名
+
+    // # 主机域名
     public static final String HOST = getHost();
 
+    // # 外部存储路径
     public static final String EXTERNAL_PATH = getExternalPath();
+
+    // # 下载路径
     public static final String DOWNLOAD_PATH = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath();
+
+    // # 视频路径
     public static final String VIDEO_PATH = EXTERNAL_PATH + "/video/";
+
+    // # 视频记录路径
     public static final String VIDEO_RECORD_PATH = VIDEO_PATH + "/record/";
+
+    // # 视频记录分片存储路径
     public static final String VIDEO_RECORD_PARTS_PATH = VIDEO_RECORD_PATH + "/parts/";
-    //下载视频保存路径
+
+
+    // # 下载视频保存路径
     public static final String VIDEO_DOWNLOAD_PATH = DOWNLOAD_PATH + "/video/";
-    //下载音乐保存路径
+
+
+    // # 下载音乐保存路径
     public static final String MUSIC_PATH = EXTERNAL_PATH + "/music/";
 
+    // # 图像路径
     public static final String IMAGE_PATH = EXTERNAL_PATH + "/image/";
-    //下载图片保存路径
+
+
+    // # 下载图片保存路径
     public static final String IMAGE_DOWNLOAD_PATH = DOWNLOAD_PATH + "/image/";
-    //log保存路径
+
+    // # log保存路径
     public static final String LOG_PATH = EXTERNAL_PATH + "/log/";
 
+    // # 礼物路径
     public static final String GIF_PATH = EXTERNAL_PATH + "/gif/";
+
+    // # 水印路径
     public static final String WATER_MARK_PATH = EXTERNAL_PATH + "/water/";
+
+    // # IM音效路径
     public static final String IM_SOUND = EXTERNAL_PATH + "/im_sound/";
+
+    // # IM 标签图像路径
     public static final String IM_IMAGE = EXTERNAL_PATH + "/im_image/";
-    //腾讯IM appId
+
+
+    // # 腾讯IM appId
     public static final int TX_IM_APP_ID = getMetaDataInt("TxIMAppId");
-    //QQ登录是否与PC端互通
+
+    // # QQ登录是否与PC端互通
     public static final boolean QQ_LOGIN_WITH_PC = false;
-    //是否使用游戏
+
+
+    // # 是否使用游戏
     public static final boolean GAME_ENABLE = true;
-    //是否上下滑动切换直播间
+
+
+    // # 是否上下滑动切换直播间
     public static final boolean LIVE_ROOM_SCROLL = true;
 
+    // #
     private static String getExternalPath() {
         String outPath = null;
         try {
@@ -88,12 +126,16 @@ public class CommonAppConfig {
         return outPath;
     }
 
+    // # 公共配置
+
     private static CommonAppConfig sInstance;
 
+    // # 私有公共配置
     private CommonAppConfig() {
 
     }
 
+    // # 公共应用配置
     public static CommonAppConfig getInstance() {
         if (sInstance == null) {
             synchronized (CommonAppConfig.class) {
@@ -105,20 +147,49 @@ public class CommonAppConfig {
         return sInstance;
     }
 
+    // # 操作者ID
     private String mUid;
+
+    // # Token
     private String mToken;
+
+    // # 配置
     private ConfigBean mConfig;
+
+    // # 经度
     private double mLng;
+
+    // # 纬度
     private double mLat;
+
+    // # 省份
     private String mProvince;//省
+
+    // # 城市
     private String mCity;//市
+
+    // # 区县
     private String mDistrict;//区
+
+    // # 用户
     private UserBean mUserBean;
+
+    // # 游客模式
     private UserBean mEmptyUserBean;//未登录游客
+
+    // # 版本
     private String mVersion;
-    private boolean mLaunched;//App是否启动了
+
+    // # APP 是否启动
+    private boolean mLaunched;
+
+    // # 观众等级
     private SparseArray<LevelBean> mLevelMap;
+
+    // # 主播等级
     private SparseArray<LevelBean> mAnchorLevelMap;
+
+    // # 礼物列表JSON
     private String mGiftListJson;
     private String mGiftDaoListJson;
     private String mTxMapAppKey;//腾讯定位，地图的AppKey
@@ -128,10 +199,20 @@ public class CommonAppConfig {
     private String mAppName;
     private Boolean mMhBeautyEnable;//是否使用美狐 true使用美狐 false 使用基础美颜
     private String mDeviceId;
-    private Boolean mTeenagerType;//是否是青少年模式
-    private int mTopActivityType;//最上面的Activity的类型 1直播间 2消息
-    private boolean mShowLiveFloatWindow;//退出直播后是否显示直播悬浮窗
 
+
+    // # 是否是青少年模式
+    private Boolean mTeenagerType;
+
+
+    // # 最上面的Activity的类型 1直播间 2消息
+    private int mTopActivityType;
+
+
+    // # 退出直播后是否显示直播悬浮窗
+    private boolean mShowLiveFloatWindow;
+
+    // 获取用户ID（当前操作者ID）
     public String getUid() {
         if (TextUtils.isEmpty(mUid)) {
             String[] uidAndToken = SpUtil.getInstance()
@@ -152,14 +233,17 @@ public class CommonAppConfig {
         return mUid;
     }
 
+    // # 获取 Token
     public String getToken() {
         return mToken;
     }
 
+    // # 是否登录
     public boolean isLogin() {
         return !Constants.NOT_LOGIN_UID.equals(getUid());
     }
 
+    // # 获取金币名称（后台可设置虚拟金币别名）
     public String getCoinName() {
         ConfigBean configBean = getConfig();
         if (configBean != null) {
@@ -185,6 +269,7 @@ public class CommonAppConfig {
         return Constants.SCORE;
     }
 
+    // 获取系统配置信息
     public ConfigBean getConfig() {
         if (mConfig == null) {
             String configString = SpUtil.getInstance().getStringValue(SpUtil.CONFIG);
@@ -639,6 +724,7 @@ public class CommonAppConfig {
         return mAnchorLevelMap.get(level);
     }
 
+    // # 获取礼物列表JSON
     public String getGiftListJson() {
         return mGiftListJson;
     }
@@ -692,6 +778,7 @@ public class CommonAppConfig {
         mFrontGround = frontGround;
     }
 
+    // # 获取设备ID
     public String getDeviceId() {
         if (TextUtils.isEmpty(mDeviceId)) {
             String deviceId = SpUtil.getInstance().getStringValue(SpUtil.DEVICE_ID);
@@ -727,6 +814,7 @@ public class CommonAppConfig {
         SpUtil.getInstance().setBooleanValue(SpUtil.BASE_FUNCTION_MODE, baseFunctionMode);
     }
 
+    // # 获取网站URL 内嵌网页需要
     public static String getHtmlUrl(String url) {
         if (!TextUtils.isEmpty(url) && url.startsWith(CommonAppConfig.HOST)) {
             if (!url.contains("?")) {
@@ -741,6 +829,7 @@ public class CommonAppConfig {
         return url;
     }
 
+    // # 私信开关是否开启
     public boolean isPrivateMsgSwitchOpen() {
         ConfigBean configBean = getConfig();
         if (configBean != null) {
@@ -749,3 +838,6 @@ public class CommonAppConfig {
         return false;
     }
 }
+
+
+//////// END

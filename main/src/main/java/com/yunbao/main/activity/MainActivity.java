@@ -1,5 +1,10 @@
 package com.yunbao.main.activity;
 
+// main - 导航栏
+// 2025-05-30 05:23
+
+/// /////
+
 import android.Manifest;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -16,10 +21,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-
 import androidx.fragment.app.DialogFragment;
 import androidx.viewpager.widget.ViewPager;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.fm.openinstall.OpenInstall;
@@ -84,15 +87,15 @@ import com.yunbao.main.views.MainMeViewHolder;
 import com.yunbao.video.activity.AbsVideoPlayActivity;
 import com.yunbao.video.activity.VideoRecordActivity;
 import com.yunbao.video.utils.VideoStorge;
-
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-
 import java.util.ArrayList;
 import java.util.List;
 
+////////
 
+// # 主页 底部tab bar
 public class MainActivity extends AbsVideoPlayActivity implements MainAppBarLayoutListener {
 
     private ViewGroup mRootView;
@@ -152,8 +155,8 @@ public class MainActivity extends AbsVideoPlayActivity implements MainAppBarLayo
         mTabButtonGroup.setOnBtnClickListener(new TabButtonGroup.OnBtnClickListener() {
             @Override
             public void onClick(int position) {
-                if(position == 0){
-                    if(mHomeViewHolder!=null){
+                if (position == 0) {
+                    if (mHomeViewHolder != null) {
                         mHomeViewHolder.changeToHomePage();
                     }
                 }
@@ -185,10 +188,10 @@ public class MainActivity extends AbsVideoPlayActivity implements MainAppBarLayo
                         }
                     }
                 }
-                if(position==0){
+                if (position == 0) {
                     boolean videoChecked = mHomeViewHolder != null && mHomeViewHolder.getCurrentItem() == 1;
                     changeStatusBarWhite(videoChecked);
-                }else{
+                } else {
                     changeStatusBarWhite(false);
                 }
             }
@@ -1027,10 +1030,13 @@ public class MainActivity extends AbsVideoPlayActivity implements MainAppBarLayo
         }
     }
 
-    public void setBottomVisible(boolean visible){
-        if(mBottom!=null){
-            mBottom.setTranslationX(visible?0:100000);
+    public void setBottomVisible(boolean visible) {
+        if (mBottom != null) {
+            mBottom.setTranslationX(visible ? 0 : 100000);
         }
     }
 
 }
+
+
+//////// END

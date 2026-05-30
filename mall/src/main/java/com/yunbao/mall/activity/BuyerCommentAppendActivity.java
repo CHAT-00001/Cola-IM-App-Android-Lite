@@ -53,6 +53,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
+ * MALL
  * 买家 商品追加评论
  */
 public class BuyerCommentAppendActivity extends AbsActivity implements View.OnClickListener {

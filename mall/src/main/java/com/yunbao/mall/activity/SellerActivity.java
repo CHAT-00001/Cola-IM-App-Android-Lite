@@ -35,7 +35,8 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
 /**
- * 卖家页面
+ * MALL
+ * 卖家控制台
  */
 public class SellerActivity extends AbsActivity {
 

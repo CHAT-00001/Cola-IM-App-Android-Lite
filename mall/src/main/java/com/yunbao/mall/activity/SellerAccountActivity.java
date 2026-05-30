@@ -1,5 +1,8 @@
 package com.yunbao.mall.activity;
 
+// mall - 卖家账户中心
+// 2026-05-30 07:23
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.annotation.Nullable;
@@ -29,6 +32,12 @@ import com.yunbao.mall.http.MallHttpUtil;
 
 import java.util.List;
 
+
+/**
+ * MALL
+ * 卖家
+ * 账户中心
+ */
 public class SellerAccountActivity extends AbsActivity implements View.OnClickListener {
 
     public static void forward(Context context) {

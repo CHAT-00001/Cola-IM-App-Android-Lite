@@ -10,7 +10,8 @@ import com.yunbao.common.utils.WordUtil;
 import com.yunbao.mall.R;
 
 /**
- * 小店详情
+ * MALL
+ * 店铺详情
  */
 public class ShopDetailActivity extends AbsActivity implements View.OnClickListener {
 

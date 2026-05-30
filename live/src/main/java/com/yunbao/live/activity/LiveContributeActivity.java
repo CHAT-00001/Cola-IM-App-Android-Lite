@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 贡献榜
+// 2026-05-30 06:23
+
 import android.text.TextUtils;
 import android.view.ViewGroup;
 
@@ -9,7 +12,8 @@ import com.yunbao.live.R;
 import com.yunbao.live.views.LiveContributeViewHolder;
 
 /**
- * Created by cxf on 2018/10/19.
+ * LIVE
+ * 直播贡献榜
  */
 
 public class LiveContributeActivity extends AbsActivity {
@@ -45,3 +49,5 @@ public class LiveContributeActivity extends AbsActivity {
         return mLiveUid;
     }
 }
+
+//////// END

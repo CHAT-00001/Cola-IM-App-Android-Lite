@@ -26,7 +26,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 卖家添加平台商品
+ * MALL
+ * 卖家
+ * 添加平台商品
  */
 public class SellerAddPlatActivity extends AbsActivity {
 

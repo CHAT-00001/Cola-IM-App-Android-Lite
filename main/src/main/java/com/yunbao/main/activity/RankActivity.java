@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - home - 排行榜
+// 2026-05-30 05:47
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.ViewGroup;
@@ -55,3 +58,5 @@ public class RankActivity extends AbsActivity {
         fragment.show(getSupportFragmentManager(), "NotLoginDialogFragment");
     }
 }
+
+//////// END

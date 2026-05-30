@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 认证中心 - 重置密码
+// 2026-05-30 05:40
+
 import android.content.Intent;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -149,3 +152,6 @@ public class ModifyPwdActivity extends AbsActivity implements View.OnClickListen
     }
 
 }
+
+
+//////// END

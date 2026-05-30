@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 动态 - 详情
+// 2026-05-30 05:33
+
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -44,7 +47,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * 动态详情页面
+ * 动态 - 详情 页面
  */
 public class ActiveDetailActivity extends AbsActivity implements ActiveCommentAdapter.ActionListener, OnItemClickListener<ActiveCommentBean>, KeyBoardUtil.KeyBoardHeightListener {
 
@@ -410,3 +413,6 @@ public class ActiveDetailActivity extends AbsActivity implements ActiveCommentAd
         fragment.show(getSupportFragmentManager(), "NotLoginDialogFragment");
     }
 }
+
+
+//////// END

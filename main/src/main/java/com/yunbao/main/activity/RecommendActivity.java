@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - live - 主播推荐页面
+// 2026-05-30 05:47
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -24,7 +27,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/11/2.
+ * 主播推荐页面
+ * 新用户注册后，弹窗推荐主播
+ *
  */
 
 public class RecommendActivity extends AbsActivity implements View.OnClickListener {
@@ -119,3 +124,6 @@ public class RecommendActivity extends AbsActivity implements View.OnClickListen
         super.onDestroy();
     }
 }
+
+
+//////// END

@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 通知中心
+// 2026-05-30 06:44
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.ViewGroup;
@@ -9,7 +12,8 @@ import com.yunbao.im.R;
 import com.yunbao.im.views.SystemMessageViewHolder;
 
 /**
- * Created by cxf on 2018/11/24.
+ * IM
+ * 通知中心
  */
 
 public class SystemMessageActivity extends AbsActivity implements SystemMessageViewHolder.ActionListener {
@@ -46,3 +50,6 @@ public class SystemMessageActivity extends AbsActivity implements SystemMessageV
         onBackPressed();
     }
 }
+
+
+//////// END

@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 联系人通知消息
+// 2026-05-30 06:40
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -25,7 +28,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by 云豹科技 on 2022/1/18.
+ * IM
+ * 联系人消息（新增粉丝）
  */
 public class ImMsgConcatActivity extends AbsActivity {
 
@@ -106,3 +110,5 @@ public class ImMsgConcatActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+//////// END

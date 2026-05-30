@@ -3,6 +3,8 @@ package com.yunbao.phonelive;
 // MAIN - AppContext
 // 2026-05-29 22:49
 
+////////
+
 import android.text.TextUtils;
 import com.fm.openinstall.OpenInstall;
 import com.hjq.toast.ToastUtils;
@@ -19,11 +21,9 @@ import com.yunbao.common.utils.UmengUtil;
 import com.yunbao.im.tpns.TpnsUtil;
 import com.yunbao.im.utils.ImMessageUtil;
 
+////////
 
-/**
- * Created by cxf on 2017/8/3.
- */
-
+/// [APP] - APP CONTEXT 应用全局上下文
 public class AppContext extends CommonAppContext {
 
     private boolean mBeautyInited;

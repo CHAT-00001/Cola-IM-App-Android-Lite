@@ -1,5 +1,7 @@
 package com.yunbao.mall.activity;
 
+// mall - 店铺主页
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
@@ -54,7 +56,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 卖家店铺主页
+ * MALL
+ *
+ * 店铺主页
  */
 public class ShopHomeActivity extends AbsActivity implements View.OnClickListener {
 

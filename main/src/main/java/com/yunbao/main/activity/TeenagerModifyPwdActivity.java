@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 设置中心 - 青少年模式 - 密码
+// 2026-05-30 05:54
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -15,8 +18,8 @@ import com.yunbao.main.http.MainHttpConsts;
 import com.yunbao.main.http.MainHttpUtil;
 
 /**
- * Created by 云豹科技 on 2022/6/6.
- * 青少年模式修改密码
+ * 设置中心
+ * 青少年模式 - 修改密码
  */
 public class TeenagerModifyPwdActivity extends AbsActivity implements SplitEditText.OnInputListener {
 
@@ -133,3 +136,5 @@ public class TeenagerModifyPwdActivity extends AbsActivity implements SplitEditT
 
     }
 }
+
+//////// END

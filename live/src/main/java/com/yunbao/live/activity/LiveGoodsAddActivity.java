@@ -1,5 +1,9 @@
 package com.yunbao.live.activity;
 
+// live - 商品添加
+// 2026-05-30 06:24
+
+
 import android.os.Handler;
 import android.os.Message;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -32,9 +36,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2019/8/29.
+ * LIVE
+ * 直播间购物商品添加
  */
-
 public class LiveGoodsAddActivity extends AbsActivity {
 
     private EditText mEditText;
@@ -232,6 +236,7 @@ public class LiveGoodsAddActivity extends AbsActivity {
         }
     }
 
-
-
 }
+
+
+//////// END

@@ -3,7 +3,6 @@
     <color name="colorPrimary">@color/global</color>
     <color name="colorPrimaryDark">@color/global</color>
     <color name="colorAccent">@color/global</color>
-
     <color name="global">#ff5878</color>
     <color name="background">@color/gray2</color>
     <color name="transparent">#00000000</color>

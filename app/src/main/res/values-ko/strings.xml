@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="true">코라 IM</string>
+    <string name="tab_home">홈</string>
+    <string name="tab_dynamic">동향</string>
+    <string name="tab_add">추가</string>
+    <string name="tab_discover">발견</string>
+    <string name="tab_profile">내 정보</string>
+</resources>

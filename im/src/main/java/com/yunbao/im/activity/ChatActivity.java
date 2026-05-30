@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 聊天列表页
+// 2026-05-30 06:34
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.ViewGroup;
@@ -14,7 +17,8 @@ import com.yunbao.im.bean.ImConUserBean;
 import com.yunbao.im.views.ImConversationViewHolder;
 
 /**
- * Created by cxf on 2018/10/24.
+ * IM
+ * 聊天列表
  */
 
 public class ChatActivity extends AbsActivity {

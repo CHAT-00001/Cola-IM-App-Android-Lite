@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - start - livestream pick channel
+// 2026-05-30 06:22
+
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,7 +21,8 @@ import com.yunbao.live.adapter.LiveReadyClassAdapter;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/10/7.
+ * LIVE
+ * 开播
  * 选择直播频道
  */
 
@@ -72,3 +76,5 @@ public class LiveChooseClassActivity extends AbsActivity implements OnItemClickL
         finish();
     }
 }
+
+//////// END

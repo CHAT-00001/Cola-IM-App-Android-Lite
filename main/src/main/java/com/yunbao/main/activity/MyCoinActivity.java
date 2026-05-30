@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 钱包 - 充值页面
+// 2026-05-30 05:42
+
 import android.content.Intent;
 import android.net.Uri;
 
@@ -310,3 +313,5 @@ public class MyCoinActivity extends AbsActivity implements View.OnClickListener 
     }
 
 }
+
+//////// END

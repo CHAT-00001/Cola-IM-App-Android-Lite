@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 观众
+// 2026-05-30 06:20
+
 import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
@@ -109,7 +112,8 @@ import java.util.List;
 import pl.droidsonroids.gif.GifImageView;
 
 /**
- * Created by cxf on 2018/10/10.
+ * LIVE
+ * 观众
  */
 
 public class LiveAudienceActivity extends LiveActivity implements LiveFunctionClickListener, View.OnClickListener {
@@ -1609,3 +1613,5 @@ public class LiveAudienceActivity extends LiveActivity implements LiveFunctionCl
         exitLiveRoom();
     }
 }
+
+//////// END

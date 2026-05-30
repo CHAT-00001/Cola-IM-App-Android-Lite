@@ -1,4 +1,4 @@
-// app build.gradle --
+// app build.gradle -- 根目录构建
 // 2026-05-29 17:32
 
 ////////
@@ -65,8 +65,9 @@ android {
         abortOnError false
     }
 
+    // APK名称构造
     android.applicationVariants.all { variant ->
-        def appName = "直播demo"
+        def appName = "可乐-IM-demo"
         def createTime = new Date().format("yyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))
         def fileName = appName + "_v" + defaultConfig.versionName + "_" + createTime
         variant.outputs.each { output ->
@@ -90,7 +91,7 @@ dependencies {
     //短视频
     api project(':video')
     // Bugly 崩溃上报 SDK（基础库） - 2026-05-29 23:46 补充
-    implementation 'com.tencent.bugly:crashreport:latest.release'  // 建议使用4.0+版本以兼容AGP 8.0
+    implementation 'com.tencent.bugly:crashreport:4.1.9.3'  // 建议使用4.0+版本以兼容AGP 8.0
 }
 
 

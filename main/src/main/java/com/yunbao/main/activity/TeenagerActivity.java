@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 设置中心 - 青少年模式
+// 2026-05-30 05:53
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -15,7 +18,8 @@ import com.yunbao.main.http.MainHttpConsts;
 import com.yunbao.main.http.MainHttpUtil;
 
 /**
- * Created by 云豹科技 on 2022/6/7.
+ * 设置
+ * 青少年模式
  */
 public class TeenagerActivity extends AbsActivity implements View.OnClickListener {
 
@@ -98,3 +102,5 @@ public class TeenagerActivity extends AbsActivity implements View.OnClickListene
 
 
 }
+
+//////// END

@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 商城 - 分类
+// 2026-05-30 05:38
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -36,6 +39,9 @@ import net.lucode.hackware.magicindicator.buildins.commonnavigator.titles.Simple
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 商城分类
+ */
 public class MallClassActivity extends AbsActivity implements View.OnClickListener {
 
     public static void forward(Context context, String className, String classId) {
@@ -270,3 +276,6 @@ public class MallClassActivity extends AbsActivity implements View.OnClickListen
 
 
 }
+
+
+//////// END

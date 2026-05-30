@@ -1,5 +1,9 @@
 package com.yunbao.live.activity;
 
+// live - 直播间管理
+// 2026-05-30 06:30
+
+
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import androidx.core.content.ContextCompat;
@@ -32,7 +36,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cxf on 2019/4/27.
+ * LIVE
+ * 房间管理
  */
 
 public class RoomManageActivity extends AbsActivity {
@@ -162,3 +167,5 @@ public class RoomManageActivity extends AbsActivity {
         }
     }
 }
+
+//////// END

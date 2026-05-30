@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 直播间
+// 2026-05-30 06:15
+
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.os.Bundle;
@@ -104,7 +107,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/10/7.
+ *
+ * LIVE ROOM - 直播房间
  */
 
 public abstract class LiveActivity extends AbsActivity implements SocketMessageListener, LiveShareDialogFragment.ActionListener, KeyBoardUtil.KeyBoardHeightListener {
@@ -1889,3 +1893,6 @@ public abstract class LiveActivity extends AbsActivity implements SocketMessageL
         return "";
     }
 }
+
+
+//////// END

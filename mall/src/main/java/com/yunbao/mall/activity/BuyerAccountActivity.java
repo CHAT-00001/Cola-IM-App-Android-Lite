@@ -29,6 +29,11 @@ import com.yunbao.mall.http.MallHttpUtil;
 
 import java.util.List;
 
+/**
+ * MALL
+ * 买家账户
+ */
+
 public class BuyerAccountActivity extends AbsActivity implements View.OnClickListener {
 
     public static void forward(Context context) {

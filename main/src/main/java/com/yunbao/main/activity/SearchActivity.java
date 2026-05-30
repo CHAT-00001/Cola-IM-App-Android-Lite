@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 主页 - 用户搜索
+// 2026-05-30 05:51
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
@@ -40,7 +43,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/10/25.
+ * 用户
+ * 搜索页面
  */
 
 public class SearchActivity extends AbsActivity implements OnItemClickListener<SearchUserBean>, View.OnClickListener {
@@ -234,3 +238,5 @@ public class SearchActivity extends AbsActivity implements OnItemClickListener<S
 
 
 }
+
+//////// END

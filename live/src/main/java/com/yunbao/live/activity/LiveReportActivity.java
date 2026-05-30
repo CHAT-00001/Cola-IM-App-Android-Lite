@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 直播间举报
+// 2026-05-30 06:28
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,7 +26,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/12/15.
+ * LIVE
  * 直播间举报
  */
 
@@ -131,3 +134,5 @@ public class LiveReportActivity extends AbsActivity implements LiveReportAdapter
         super.onDestroy();
     }
 }
+
+//////// END

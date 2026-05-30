@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 屏幕录像服务
+// 2026-05-30 06:32
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -17,6 +20,12 @@ import androidx.core.app.NotificationCompat;
 import com.yunbao.common.CommonAppConfig;
 import com.yunbao.common.utils.WordUtil;
 import com.yunbao.live.R;
+
+/**
+ * LIVE
+ * 录屏直播服务
+ * 游戏直播
+ */
 
 public class ScreenRecordService extends Service {
 
@@ -66,3 +75,5 @@ public class ScreenRecordService extends Service {
 
     }
 }
+
+//////// END

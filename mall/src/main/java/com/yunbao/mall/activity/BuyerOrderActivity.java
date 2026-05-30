@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * MALL
  * 买家 订单列表
  */
 public class BuyerOrderActivity extends AbsActivity {

@@ -58,6 +58,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * MALL
  * 卖家添加商品
  */
 public class SellerAddGoodsActivity extends AbsActivity {

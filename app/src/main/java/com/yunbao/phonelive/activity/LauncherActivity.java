@@ -1,5 +1,10 @@
 package com.yunbao.phonelive.activity;
 
+// app 模块 启动页面
+// 2026-05-30 03:50
+
+////////
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -57,9 +62,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by cxf on 2018/9/17.
- */
+////////
+
+// 启动页
 public class LauncherActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "LauncherActivity";
@@ -560,3 +565,7 @@ public class LauncherActivity extends AppCompatActivity implements View.OnClickL
         checkHasAdLink(0);
     }
 }
+
+
+
+//////// END

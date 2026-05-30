@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 用户资料 - 添加印象
+// 2026-05-30 06:16
+
 import android.text.TextUtils;
 import android.view.ViewGroup;
 
@@ -9,7 +12,7 @@ import com.yunbao.live.R;
 import com.yunbao.live.views.LiveAddImpressViewHolder;
 
 /**
- * Created by cxf on 2018/10/15.
+ * LIVE
  * 添加印象
  */
 
@@ -46,3 +49,6 @@ public class LiveAddImpressActivity extends AbsActivity {
         }
     }
 }
+
+
+//////// END

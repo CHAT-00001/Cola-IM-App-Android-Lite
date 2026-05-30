@@ -1,5 +1,8 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 设置中心 - 青少年模式 - 设置密码
+// 2026-05-30 05:55
+
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,8 +27,9 @@ import com.yunbao.main.http.MainHttpUtil;
 import org.greenrobot.eventbus.EventBus;
 
 /**
- * Created by 云豹科技 on 2022/6/6.
- * 青少年模式设置密码
+ * 我的
+ * 设置中心
+ * 青少年模式 设置密码
  */
 public class TeenagerPwdActivity extends AbsActivity {
 
@@ -156,3 +160,5 @@ public class TeenagerPwdActivity extends AbsActivity {
 
 
 }
+
+//////// END

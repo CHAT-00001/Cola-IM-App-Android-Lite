@@ -1,5 +1,8 @@
 package com.yunbao.live.activity;
 
+// live - 直播间管理细节
+// 2026-05-30 06:31
+
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
@@ -12,7 +15,8 @@ import com.yunbao.live.R;
 import com.yunbao.live.bean.LiveAdminRoomBean;
 
 /**
- * Created by cxf on 2019/4/27.
+ * LIVE
+ * 直播间管理细节
  */
 
 public class RoomManageDetailActivity extends AbsActivity implements View.OnClickListener {
@@ -52,3 +56,5 @@ public class RoomManageDetailActivity extends AbsActivity implements View.OnClic
         }
     }
 }
+
+//////// END

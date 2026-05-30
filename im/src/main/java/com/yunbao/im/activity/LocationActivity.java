@@ -1,5 +1,8 @@
 package com.yunbao.im.activity;
 
+// im - 位置
+// 2026-05-30 06:43
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +17,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.tencent.tencentmap.mapsdk.maps.CameraUpdateFactory;
@@ -48,7 +49,8 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.List;
 
 /**
- * Created by cxf on 2018/7/18.
+ * IM
+ * 位置服务
  */
 
 public class LocationActivity extends AbsActivity implements View.OnClickListener {
@@ -469,5 +471,6 @@ public class LocationActivity extends AbsActivity implements View.OnClickListene
         showMyLocation();
     }
 
-
 }
+
+//////// END

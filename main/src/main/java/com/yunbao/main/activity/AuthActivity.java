@@ -1,4 +1,8 @@
 package com.yunbao.main.activity;
+// main - 实名认证
+// 2026-05-30 05:21
+
+////////
 
 import android.app.Dialog;
 import android.text.TextUtils;
@@ -28,6 +32,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+////////
+
+// # 实名认证
 public class AuthActivity extends AbsActivity implements View.OnClickListener {
 
     private EditText mName;

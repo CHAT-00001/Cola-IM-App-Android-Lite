@@ -1,9 +1,11 @@
 package com.yunbao.im.activity;
 
+// im - 短视频点赞通知消息
+// 2026-05-30 06:41
+
 import android.content.Context;
 import android.content.Intent;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import com.alibaba.fastjson.JSON;
 import com.yunbao.common.activity.AbsActivity;
 import com.yunbao.common.adapter.RefreshAdapter;
@@ -15,12 +17,12 @@ import com.yunbao.im.adapter.ImMsgLikeAdapter;
 import com.yunbao.im.bean.VideoImMsgBean;
 import com.yunbao.im.http.ImHttpConsts;
 import com.yunbao.im.http.ImHttpUtil;
-
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by 云豹科技 on 2022/1/18.
+ * IM
+ * 点赞通知消息（短视频）
  */
 public class ImMsgLikeActivity extends AbsActivity {
 
@@ -91,3 +93,5 @@ public class ImMsgLikeActivity extends AbsActivity {
         super.onDestroy();
     }
 }
+
+//////// END

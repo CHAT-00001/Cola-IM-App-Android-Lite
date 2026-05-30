@@ -21,6 +21,7 @@ import com.yunbao.mall.http.MallHttpConsts;
 import com.yunbao.mall.http.MallHttpUtil;
 
 /**
+ * MALL
  * 买家页面
  */
 public class BuyerActivity extends AbsActivity {

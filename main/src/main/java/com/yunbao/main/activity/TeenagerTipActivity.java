@@ -1,5 +1,9 @@
 package com.yunbao.main.activity;
 
+// main - 我的 - 设置中心 - 青少年模式 -
+// 2026-05-30 05:55
+
+
 import android.content.Intent;
 import android.view.View;
 import android.widget.TextView;
@@ -9,7 +13,8 @@ import com.yunbao.common.activity.AbsActivity;
 import com.yunbao.main.R;
 
 /**
- * Created by 云豹科技 on 2022/6/6.
+ * 青少年模式
+ * 标识
  */
 public class TeenagerTipActivity extends AbsActivity implements View.OnClickListener {
 
@@ -56,3 +61,5 @@ public class TeenagerTipActivity extends AbsActivity implements View.OnClickList
     }
 
 }
+
+//////// END
