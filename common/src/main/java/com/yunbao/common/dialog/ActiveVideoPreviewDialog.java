@@ -151,7 +151,11 @@ public class ActiveVideoPreviewDialog extends AbsDialogFragment implements View.
             e.printStackTrace();
         } finally {
             if (mmr != null) {
-                mmr.release();
+                try {
+                    mmr.release();
+                } catch (Exception ignored) {
+                    // ignore
+                }
             }
         }
         if (mTXCloudVideoView != null && videoWidth > 0 && videoHeight > 0) {
