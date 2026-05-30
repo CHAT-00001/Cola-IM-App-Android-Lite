@@ -92,6 +92,8 @@ dependencies {
     api project(':video')
     // Cola-IM 自研 SDK
     api project(':cola-im-sdk')
+    // Cola-IM UI 组件库
+    implementation project(':cola-im-ui')
     // Bugly 崩溃上报 SDK（基础库） - 2026-05-29 23:46 补充
     implementation 'com.tencent.bugly:crashreport:4.1.9.3'  // 建议使用4.0+版本以兼容AGP 8.0
 }

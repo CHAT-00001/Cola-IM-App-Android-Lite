@@ -14,4 +14,5 @@ include ':app',         // App
         ':game',        // 游戏
         ':mall',        // 商城
         ':beauty',      // 美颜
-        ':cola-im-sdk'  // Cola-IM 自研 SDK
+        ':cola-im-sdk', // Cola-IM 自研 SDK
+        ':cola-im-ui'   // Cola-IM UI 组件库
