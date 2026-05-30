@@ -4,13 +4,14 @@
 
 
 
-include ':app',     // App
-        ':baidu',   // baidu
-        ':common',  // 通用
-        ':im',      // 即时通
-        ':live',    // 直播
-        ':main',    // 主包
-        ':video',   // 短视频
-        ':game',    // 游戏
-        ':mall',    // 商城
-        ':beauty'   // 美颜
+include ':app',         // App
+        ':baidu',       // baidu
+        ':common',      // 通用
+        ':im',          // 即时通
+        ':live',        // 直播
+        ':main',        // 主包
+        ':video',       // 短视频
+        ':game',        // 游戏
+        ':mall',        // 商城
+        ':beauty',      // 美颜
+        ':cola-im-sdk'  // Cola-IM 自研 SDK

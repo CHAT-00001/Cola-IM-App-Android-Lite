@@ -1,0 +1,64 @@
+syntax = "proto3";
+
+package com.cola.im.sdk.proto;
+
+option java_package = "com.cola.im.sdk.proto";
+option java_multiple_files = true;
+
+/*
+ * Cola-IM 协议契约——基于 Protobuf V3
+ *
+ * 消息结构：
+ * 1. Envelope（信封层，不加密）
+ * 2. MessageBody（消息体，加密内容）
+ * 3. Ack（确认消息）
+ */
+
+// ===== 信封层（路由信息，不加密） =====
+message Envelope {
+    string send_id = 1;       // 发送端 UUID v4
+    string sync_id = 2;       // 服务器同步 ID
+    int64  seq_no = 3;        // 序列号（单调递增）
+    int64  sync_at = 4;       // 同步时间戳
+    string from_uid = 5;      // 发送者 UID
+    string to_target_id = 6;  // 接收者/群 ID
+    string channel = 7;       // 通道类型（single/group）
+    int64  timestamp = 8;     // 客户端时间戳
+}
+
+// ===== 消息体（加密内容） =====
+message MessageBody {
+    string content_type = 1;      // 内容类型（text/image/video/file）
+    bytes  payload = 2;           // 实际负载（文本或媒体数据）
+    bool   is_encrypted = 3;      // 是否加密
+    string crypto_noise = 4;      // 棘轮公钥参数（JSON，仅加密时存在）
+    int32  version = 5;           // 协议版本号
+}
+
+// ===== 确认消息（ACK） =====
+message Ack {
+    string action = 1;            // server_ack / client_ack / read_ack
+    string send_id = 2;           // 原始 send_id
+    string sync_id = 3;           // 同步 ID
+    int64  seq_no = 4;            // 确认的序列号
+    int64  sync_at = 5;           // 同步时间戳
+    string uid = 6;               // 确认方 UID
+    repeated string msg_ids = 7;  // 批量已读 ID 列表
+}
+
+// ===== 心跳消息 =====
+message Heartbeat {
+    string action = 1;   // ping / pong
+    string uid = 2;
+    int64  ts = 3;       // 时间戳
+}
+
+// ===== 认证消息 =====
+message Auth {
+    string action = 1;       // auth / auth_ack
+    string uid = 2;
+    string token = 3;
+    string device_id = 4;
+    string client_version = 5;
+    string platform = 6;
+}
